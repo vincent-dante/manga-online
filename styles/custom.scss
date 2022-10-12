@@ -1,0 +1,92 @@
+body {
+  background-color: #f1f3f8;
+  color: $color-primary;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.background-secondary {
+  background-color: $color-secondary;
+}
+
+.border-secondary {
+  border-color: $color-secondary;
+}
+
+.nav-top {
+  a.active {
+    color: $color-secondary;
+  }
+}
+
+.section-title {
+  color: $color-secondary;
+
+  svg {
+    display: inline;
+    fill: $color-secondary;
+  }
+}
+
+.card-container {
+  filter: brightness(90%);
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+    }
+
+    color: $color-secondary;
+    filter: brightness(1);
+    transition: all 0.5s ease;
+  }
+
+  .card-details {
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.genres-button {
+  color: white;
+  background: $color-secondary;
+  cursor: pointer;
+}
+
+.topmanga-title {
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.imageContainer {
+  width: 100%;
+  min-height: 8rem;
+
+  span {
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+.footer {
+  background-color: #222831;
+}
