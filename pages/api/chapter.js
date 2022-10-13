@@ -4,11 +4,22 @@ import ChapterList from '../../utility/chapter.json';
 export default function handler(req, res) {
   const chapter = ChapterList.data;
   const {
-    query: { id, chapterId },
+    query: { id },
   } = req;
 
-  res.json({
-    ...chapter.find((chapter) => chapter.id === id),
-  });
-  /* res.status(200).json({ coverImage: '/manga-cover/0001.jpg' }); */
+  const findResult = chapter.find((chapter) => chapter.id === id);
+
+  /*   res.json({
+    data: [{ ...chapter.find((chapter) => chapter.id === id) }],
+  }); */
+
+  if (findResult === undefined) {
+    res.json({
+      data: [],
+    });
+  } else {
+    res.json({
+      data: [{ ...findResult }],
+    });
+  }
 }
