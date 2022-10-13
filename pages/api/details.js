@@ -7,7 +7,15 @@ export default function handler(req, res) {
     query: { id },
   } = req;
 
-  res.json({
-    ...details.find((details) => details.id === id),
-  });
+  const findResult = details.find((details) => details.id === id);
+
+  if (findResult === undefined) {
+    res.json({
+      data: [],
+    });
+  } else {
+    res.json({
+      data: [{ ...findResult }],
+    });
+  }
 }

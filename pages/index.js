@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 // icon
-//import FireIcon from '../public/icon/fire-solid.svg';
+import FireIcon from '../public/icon/fire-solid.svg';
 
 // components
 import Card from '../components/Card';
@@ -24,18 +24,18 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-5">
           {/* Main content */}
           <div className="w-full col-span-12 xl:col-span-9">
-            <div className="w-full mb-10">
+            <div className="w-full mb-5">
               <Hero />
             </div>
 
-            {/*             <div className="section-title py-5 text-lg">
+            <div className="section-title py-5 text-lg">
               <FireIcon width={24} height={24} className="mr-2" />
               <span>Hot Updates</span>
-            </div> */}
+            </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-5 gap-5">
               {manga
-                // .filter((item, index) => index < 10)
+                .filter((item, index) => index < 20)
                 .map((manga) => (
                   <Card key={manga.id} manga={manga} chapter="new chapters" />
                 ))}
