@@ -1,3 +1,12 @@
-# MangaOnline
+# MangaOnline PROJECT :sparkles:
 
-Web Design for Manga Page
+
+Hi there :wave: this is my project for MangaOnline.
+
+## Stack I Use:
+
+- :rocket: NextJS
+
+## Live Preview
+https://mangaonline.vercel.app/
+
