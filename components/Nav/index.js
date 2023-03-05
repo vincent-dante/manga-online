@@ -79,12 +79,12 @@ function Nav() {
         </div>
 
         <div
-          className="hidden md:hidden text-2xl text-[#374151] cursor-pointer"
+          className="hidden md:hidden text-[#374151] cursor-pointer"
           id="search-back-button"
           onClick={hideSearchInputMobile}
           title="Back"
         >
-          <FontAwesomeIcon icon={faAngleLeft} />
+          <FontAwesomeIcon icon={faAngleLeft} className="w-6 h-6" />
         </div>
 
         <div
