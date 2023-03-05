@@ -9,10 +9,6 @@ export default function handler(req, res) {
 
   const findResult = chapter.find((chapter) => chapter.id === id);
 
-  /*   res.json({
-    data: [{ ...chapter.find((chapter) => chapter.id === id) }],
-  }); */
-
   if (findResult === undefined) {
     res.json({
       data: [],

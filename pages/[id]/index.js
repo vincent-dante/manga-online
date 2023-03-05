@@ -64,7 +64,7 @@ export default function Details() {
 
   if (noRecordFound) {
     return (
-      <div className="container mx-auto py-5 px-3 lg:px-10 xl:px-20 text-gray-700">
+      <div className="container mx-auto py-5 px-4 lg:px-10 xl:px-20 text-gray-700">
         <div className="w-80 mx-auto">
           <NotFound />
         </div>
@@ -90,7 +90,7 @@ export default function Details() {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        <div className="container mx-auto py-5 px-3 lg:px-10 xl:px-20 text-gray-700">
+        <div className="container mx-auto py-5 px-4 lg:px-10 xl:px-20 text-gray-700">
           <div className="grid grid-cols-12 gap-5">
             <div className="w-full col-span-12 xl:col-span-9 text-sm">
               <div className="grid grid-cols-9 gap-5 mb-5">
