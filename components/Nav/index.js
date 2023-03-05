@@ -58,7 +58,7 @@ function Nav() {
 
   return (
     <nav className="nav-top">
-      <div className="container mx-auto flex flex-wrap justify-between md:justify-start items-center gap-5 py-5 px-4 lg:px-10 xl:px-20">
+      <div className="container mx-auto flex justify-between md:justify-start items-center gap-5 py-5 px-4 lg:px-10 xl:px-20">
         <Link href="/">
           <a
             className="md:flex items-center"
