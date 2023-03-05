@@ -48,11 +48,11 @@ function Nav() {
     document.getElementById('search-container').classList.add('hidden');
     document.getElementById('search-back-button').classList.add('hidden');
     document.getElementById('search-icon-button').classList.remove('hidden');
+    setSearchText('');
+    setMangaListResult([]);
   };
 
   useEffect(() => {
-    setMangaListResult([]);
-    setSearchText('');
     hideSearchInputMobile();
   }, [router.query]);
 
@@ -70,12 +70,12 @@ function Nav() {
         </Link>
 
         <div
-          className="block md:hidden text-2xl text-[#374151] cursor-pointer"
+          className="md:hidden text-[#374151] cursor-pointer"
           id="search-icon-button"
           onClick={showSearchInputMobile}
           title="Search"
         >
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} className="w-6 h-6" />
         </div>
 
         <div
