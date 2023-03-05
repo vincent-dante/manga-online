@@ -20,7 +20,7 @@ export default function Home() {
         <title>MangaOnline</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="container mx-auto py-5 px-3 lg:px-10 xl:px-20">
+      <div className="container mx-auto py-5 px-4 lg:px-10 xl:px-20">
         <div className="grid grid-cols-12 gap-5">
           {/* Main content */}
           <div className="w-full col-span-12 xl:col-span-9">
